@@ -33,7 +33,7 @@ t.fd(300)
 color = textinput("Obter cor","Digite a cor desejada:")
 
 t.pu()
-t.goto(200,300)
+t.goto(150,150)
 t.pd()
 t.color("blue")
 t.begin_fill()
@@ -68,12 +68,41 @@ t.pu()
 t.goto(-150,-150)
 t.pd()
 t.stamp()
-t.color("gray")
+t.color("yellow")
 t.begin_fill()
 t.fillcolor(color)
 for _ in range(5):
        t.fd(108)
        t.right(72)
 t.end_fill()
+
+#figura geometrica 4
+
+color = textinput("Obter cor","Digite a cor desejada:")
+
+t.pu()
+t.goto(375,-150)
+t.pd()
+t.stamp()
+t.color("green")
+t.begin_fill()
+t.fillcolor(color)
+for _ in range(8):
+       t.fd(135)
+       t.right(45)
+t.end_fill()
+
+
+#espiral
+
+# 1. MOVER PARA O NOVO LUGAR
+t.penup()
+t.goto(250, 250) 
+t.pendown()
+
+# 2. DESENHAR A ESPIRAL
+for i in range(100):
+    t.forward(i)
+    t.right(45)
 
 mainloop()

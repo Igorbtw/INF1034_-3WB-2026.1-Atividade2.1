@@ -48,7 +48,7 @@ t.end_fill()
 color = textinput("Obter cor","Digite a cor desejada:")
 
 t.pu()
-t.goto(-150,1500)
+t.goto(-150,150)
 t.pd()
 t.stamp()
 t.color("red")
@@ -59,5 +59,21 @@ for _ in range(6):
       t.fd(90)
 t.end_fill()
 
+
+#figura geometrica 3
+
+color = textinput("Obter cor","Digite a cor desejada:")
+
+t.pu()
+t.goto(-150,-150)
+t.pd()
+t.stamp()
+t.color("gray")
+t.begin_fill()
+t.fillcolor(color)
+for _ in range(5):
+       t.fd(108)
+       t.right(72)
+t.end_fill()
 
 mainloop()

@@ -28,17 +28,36 @@ t.pd()
 t.lt(90)
 t.fd(300)
 
-#figura geometrica
+#figura geometrica 1
+
+color = textinput("Obter cor","Digite a cor desejada:")
+
 t.pu()
 t.goto(200,300)
 t.pd()
-t.stamp()
-t.color("red")
+t.color("blue")
 t.begin_fill()
-t.fillcolor("purple")
+t.fillcolor(color)
 for _ in range(3):
       t.fd(100)
       t.lt(120)    
 t.end_fill()
+
+#figura geometrica 2
+
+color = textinput("Obter cor","Digite a cor desejada:")
+
+t.pu()
+t.goto(-150,1500)
+t.pd()
+t.stamp()
+t.color("red")
+t.begin_fill()
+t.fillcolor(color)
+for _ in range(6):
+      t.right(60)
+      t.fd(90)
+t.end_fill()
+
 
 mainloop()
